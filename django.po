@@ -1091,7 +1091,7 @@ msgstr "заглавие"
 
 #: forum/forms/qanda.py:24
 msgid "please enter a descriptive title for your question"
-msgstr "моля въведете описателно заглавие на въпроса си"
+msgstr "(моля въведете описателно заглавие на въпроса си)"
 
 #: forum/forms/qanda.py:31
 #, python-format
@@ -3339,7 +3339,7 @@ msgid ""
 "Below is the list of available badges and number of times each type of badge "
 "has been awarded.\n"
 "    "
-msgstr "Следва списък с всички значки и колко пъти те са били предоставени."
+msgstr "Списък с всички значки и колко пъти те са били спечелвани."
 
 #: forum/skins/default/templates/badges.html:39
 #: forum/skins/nuxeo/templates/badges.html:41
@@ -6601,7 +6601,7 @@ msgstr[1] ""
 #: forum/skins/nuxeo/templates/users/stats.html:49
 #, python-format
 msgid "the answer has been voted for %(vote_count)s times"
-msgstr "отоговора е гласуван %(vote_count)s пъти"
+msgstr "отоговора има %(vote_count)s коментара"
 
 #: forum/skins/default/templates/users/stats.html:51
 #: forum/skins/nuxeo/templates/users/stats.html:49
@@ -6959,12 +6959,12 @@ msgstr "точки"
 #: forum/templatetags/extra_tags.py:114
 #, fuzzy, python-format
 msgid "%(user)s has %(count)d accepted answers"
-msgstr "%(user)s има %(count)d приети отговора"
+msgstr "%(user)s е дал %(count)d правилни отговора"
 
 #: forum/templatetags/extra_tags.py:120
 #, fuzzy, python-format
 msgid "%s has one accepted answer"
-msgstr "%s има един приет отговор"
+msgstr "%s е дал един правилен отговор"
 
 #: forum/templatetags/extra_tags.py:126
 #, fuzzy, python-format
@@ -7983,7 +7983,7 @@ msgstr "Популярен Въпрос"
 #: forum_modules/default_badges/badges.py:54
 #, python-format
 msgid "Question voted up %s times"
-msgstr "Въпрос получил положителен глас %s пъти"
+msgstr "Въпрос получил %s положителени гласа"
 
 #: forum_modules/default_badges/badges.py:58
 msgid "Nice Question"
@@ -8000,7 +8000,7 @@ msgstr "Страхотен Въпрос"
 #: forum_modules/default_badges/badges.py:77
 #, python-format
 msgid "Answer voted up %s times"
-msgstr "Отговор получил положителни гласове %s пъти"
+msgstr "Отговор получил %s положителни гласа"
 
 #: forum_modules/default_badges/badges.py:81
 msgid "Nice Answer"
@@ -8067,7 +8067,7 @@ msgstr "Граждански Патрул"
 
 #: forum_modules/default_badges/badges.py:169
 msgid "First flagged post"
-msgstr "Първа маркирана публикация"
+msgstr "Първи подаден сигнал"
 
 #: forum_modules/default_badges/badges.py:173
 msgid "Organizer"
@@ -8091,7 +8091,7 @@ msgstr "Учен"
 
 #: forum_modules/default_badges/badges.py:184
 msgid "First accepted answer on your own question"
-msgstr "Първи приет отговор на Вашия собствен въпрос"
+msgstr "Първи приет правилен отговор"
 
 #: forum_modules/default_badges/badges.py:188
 msgid "Cleanup"
@@ -8099,7 +8099,7 @@ msgstr "Почистване"
 
 #: forum_modules/default_badges/badges.py:189
 msgid "First rollback"
-msgstr "Първо почистване"
+msgstr "Първо връщане към стара версия"
 
 #: forum_modules/default_badges/badges.py:195
 msgid "Autobiographer"
@@ -8107,7 +8107,7 @@ msgstr "Автобиографист"
 
 #: forum_modules/default_badges/badges.py:196
 msgid "Completed all user profile fields"
-msgstr "Попълнил е всички полета на потребителския профил"
+msgstr "Попълнил всички полета в профила си"
 
 #: forum_modules/default_badges/badges.py:209
 msgid "Civic Duty"
@@ -8125,7 +8125,7 @@ msgstr "Експерт"
 #: forum_modules/default_badges/badges.py:221
 #, python-format
 msgid "Left %s comments"
-msgstr "Остават %s коментара"
+msgstr "Коментирал %s пъти"
 
 #: forum_modules/default_badges/badges.py:231
 msgid "Self Learner"
@@ -8134,7 +8134,7 @@ msgstr "Самоук/а"
 #: forum_modules/default_badges/badges.py:232
 #, python-format
 msgid "Answered your own question with at least %s up votes"
-msgstr "Отговорил на собствения си въпрос с поне %s положителни гласа"
+msgstr "Отговорил правилно на собствения си въпрос и получил повече от %s положителни гласа"
 
 #: forum_modules/default_badges/badges.py:244
 msgid "Strunk & White"
@@ -8151,7 +8151,7 @@ msgstr "Студент"
 
 #: forum_modules/default_badges/badges.py:256
 msgid "Asked first question with at least one up vote"
-msgstr "Зададе първия си въпрос с поне един положителен вот"
+msgstr "Получи първия си положителен вот"
 
 #: forum_modules/default_badges/badges.py:267
 msgid "Teacher"
@@ -8177,7 +8177,7 @@ msgstr "Гуру"
 #: forum_modules/default_badges/badges.py:293
 #, python-format
 msgid "Accepted answer and voted up %s times"
-msgstr "Приет отговор и с поне %s положителни гласа"
+msgstr "Правилен отговор с поне %s положителни гласа"
 
 #: forum_modules/default_badges/badges.py:304
 msgid "Necromancer"
@@ -8189,7 +8189,7 @@ msgid ""
 "Answered a question more than %(dif_days)s days later with at least "
 "%(up_votes)s votes"
 msgstr ""
-"Отговори на въпрос %(dif_days)s дни по-късно с поне "
+"Отговори правилно на %(dif_days)s дневен въпрос с поне "
 "%(up_votes)s положителни гласа"
 
 #: forum_modules/default_badges/badges.py:317
@@ -8251,7 +8251,7 @@ msgid ""
 "question author\n"
 msgstr ""
 "\n"
-"Колко прегледа трябва да има въпрос, за може автора му да получи значка"
+"Колко прегледа трябва да има въпрос, за да може автора му да получи значка"
 " - Известен въпрос\n"
 
 #: forum_modules/default_badges/settings.py:24
@@ -9063,7 +9063,7 @@ msgstr "Тест фраза 4"
 #~ "задайте въпрос отнасящ се към %(app_title)s"
 
 #~ msgid "please try provide enough details"
-#~ msgstr "уверете се, че опишете с достатъчно подробности"
+#~ msgstr "моля опишете с достатъчно подробности"
 
 #~ msgid ""
 #~ "Please create your screen name and save your email address. Saved email "
@@ -9173,13 +9173,13 @@ msgstr "Тест фраза 4"
 #~ msgstr "Автоматично приемай потребителските добавяния за email ъпдейтите"
 
 #~ msgid "marked an answer"
-#~ msgstr "посочи за въпрос"
+#~ msgstr "избран за отговор"
 
 #~ msgid "edited an answer"
-#~ msgstr "редактиран като отговор"
+#~ msgstr "редактирай отговор"
 
 #~ msgid "received badge"
-#~ msgstr "получена значка"
+#~ msgstr "заслужена значка"
 
 #~ msgid ""
 #~ "the page you tried to visit is protected or you don't have sufficient "
